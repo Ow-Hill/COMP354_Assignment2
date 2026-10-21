@@ -1,7 +1,7 @@
 item_id|restaurant_id|name|description|price_cad|available
 D01|R02|Cheese Pizza|Medium pizza with tomato sauce and mozzarella|12.99|true
 D02|R02|Pepperoni Pizza|Medium pizza with pepperoni and mozzarella|14.99|true
-D03|R02|Vegetarian Pizza|Medium pizza with mushrooms peppers and onions|14.49|true
+D03|R02|Veggie Pizza|Medium pizza with mushrooms peppers and onions|14.49|true
 D04|R02|Chicken Pizza|Medium pizza with chicken onions and barbecue sauce|16.99|true
 D05|R02|Garlic Bread|Garlic bread with melted cheese|5.99|true
 D06|R02|Soft Drink|355 ml canned soft drink|2.49|true

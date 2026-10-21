@@ -61,12 +61,13 @@ public class Cart {
         }
     }
     // to string
+    @Override 
     public String toString(){
         
         String out = "";
         // loop through and add
         for (int i = 0; i < this.cartList.size(); i++){
-            out += "number " + i + ": " + this.cartList.get(i).toString() + "\n";
+            out += "item " + (i+1) + ":\t" + this.cartList.get(i).toString() + "\n";
         }
         
         return out;
