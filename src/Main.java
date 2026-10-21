@@ -271,12 +271,13 @@ public class Main {
         System.out.print("Enter menu number: ");
         int itemNum = readInt(keyIn);
 
-        if (itemNum == 7) {
+        if (itemNum == 1) {
             System.out.print("Enter the number of the item you want to modify: ");
             int removeNum = readInt(keyIn);
             System.out.print("Enter the quantity you want to remove: ");
             int quantityRemoved = readInt(keyIn);
-            cart.removeCartList(removeNum, quantityRemoved);
+            cart.removeCartList(removeNum-1, quantityRemoved);
+            viewCart(keyIn, cart);
         } else if (itemNum == 0) {
             System.out.println("Thank you for using QuickBite.");
             System.exit(0);
