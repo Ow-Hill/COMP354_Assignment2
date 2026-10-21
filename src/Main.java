@@ -194,7 +194,7 @@ public class Main {
 
             for (int i = 0; i < restaurant.menu.size(); i++) {
                 MenuItemData item = restaurant.menu.get(i);
-                System.out.printf("%d. %s | CAD %.2f%s%n   %s%n",
+                System.out.printf("%d. %s | $%.2f%s%n   %s%n",
                         i + 1,
                         item.name,
                         item.price,
