@@ -60,6 +60,7 @@ public class Cart {
             System.out.println("Try input again, not valid index");
         }
     }
+    
     // to string
     public String toString(){
         
@@ -68,7 +69,7 @@ public class Cart {
         for (int i = 0; i < this.cartList.size(); i++){
             out += "number " + i + ": " + this.cartList.get(i).toString() + "\n";
         }
-        
+
         return out;
     }
     
