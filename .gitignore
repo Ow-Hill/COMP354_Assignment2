@@ -1,0 +1,6 @@
+# Compiled Java files
+out/
+*.class
+
+# IntelliJ local settings
+.idea/workspace.xml

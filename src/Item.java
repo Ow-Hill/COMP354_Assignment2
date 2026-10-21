@@ -48,7 +48,7 @@ public class Item{
     }
 
     public String toString(){
-        String out = "" + this.itemName + " " + this.price + " " + this.restaurant + " " + this.amount + " ";
+        String out = "" + this.itemName + " " + this.price + " " + this.restaurant + " (" + this.amount + ") ";
         return out;
     }
 
