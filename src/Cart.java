@@ -5,6 +5,7 @@ public class Cart {
     private String userID;
     private ArrayList<Item> cartList = new ArrayList<>();
 
+    // consructors
     public Cart(String uid, ArrayList<Item> list){
         this.userID = uid;
         this.cartList = list;
@@ -39,33 +40,35 @@ public class Cart {
         this.cartList.add(item);
     }
 
+  
+    // if number great enough to remove all, delete from list
+    // else remove item amounts from cart 
     public void removeCartList(int index, int quantity){
-    // check array bounds
-    if (index >= 0 && index < this.cartList.size()) {
-        Item item = this.cartList.get(index);
-        int newAmount = item.getAmount() - quantity;
+        // check array bounds
+        if (index >= 0 && index < this.cartList.size()) {
+            Item item = this.cartList.get(index);
+            int newAmount = item.getAmount() - quantity;
 
-        if (newAmount <= 0) {
-            this.cartList.remove(index);
-        } else {
-            item.setAmount(newAmount);
+            // remove or decrement
+            if (newAmount <= 0) {
+                this.cartList.remove(index);
+            } else {
+                item.setAmount(newAmount);
+            }
+
+        }else{
+            System.out.println("Try input again, not valid index");
         }
-    }else{
-        System.out.println("Try input again, not valid index");
     }
-
-
-
-    }
-
     // to string
     public String toString(){
         
         String out = "";
+        // loop through and add
         for (int i = 0; i < this.cartList.size(); i++){
             out += "number " + i + ": " + this.cartList.get(i).toString() + "\n";
         }
-
+        
         return out;
     }
     
