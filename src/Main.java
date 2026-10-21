@@ -60,9 +60,10 @@ public class Main {
                 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
         System.out.println(greeting);
 
+        System.out.println("\nINITIAL MENU SCREEN");
         System.out.println("1. I am a customer");
         System.out.println("2. I am a restaurant");
-        System.out.print("What type of user are you? ");
+        System.out.print("\nWhat type of user are you?     ");
         int userType = readInt(keyIn);
 
         if (userType == 1) {
@@ -142,10 +143,11 @@ public class Main {
         int commandNum = -1;
 
         while (commandNum != 0) {
-            System.out.println("\n1. Browse Restaurants");
+            System.out.println("\nCUSTOMER MENU SCREEN");
+            System.out.println("1. Browse Restaurants");
             System.out.println("2. View Cart");
             System.out.println("0. Exit Program");
-            System.out.print("Enter command number: ");
+            System.out.print("Enter menu number: ");
             commandNum = readInt(keyIn);
 
             if (commandNum == 1) {
@@ -157,7 +159,7 @@ public class Main {
             }
         }
 
-        System.out.println("Thank you for using QuickBite.");
+        System.out.println("\n\nThank you for using QuickBite.\n\n1");
     }
 
     // Li: restaurant browsing and menu integration.
@@ -192,7 +194,7 @@ public class Main {
 
             for (int i = 0; i < restaurant.menu.size(); i++) {
                 MenuItemData item = restaurant.menu.get(i);
-                System.out.printf("%d. %s | CAD %.2f%s%n   %s%n",
+                System.out.printf("%d. %s | $%.2f%s%n   %s%n",
                         i + 1,
                         item.name,
                         item.price,
@@ -201,7 +203,7 @@ public class Main {
             }
 
             System.out.println("0. Back");
-            System.out.print("Item to add: ");
+            System.out.print("\nItem to add: ");
             int itemNum = readInt(keyIn);
 
             if (itemNum == 0) return;
@@ -263,18 +265,19 @@ public class Main {
         }
 
         System.out.println(cart);
-        System.out.println("7. Remove items");
-        System.out.println("8. Return to Main Menu");
+        System.out.println("1. Remove items");
+        System.out.println("2. Return to Main Menu");
         System.out.println("0. Exit Program");
-        System.out.print("Enter command number: ");
+        System.out.print("Enter menu number: ");
         int itemNum = readInt(keyIn);
 
-        if (itemNum == 7) {
+        if (itemNum == 1) {
             System.out.print("Enter the number of the item you want to modify: ");
             int removeNum = readInt(keyIn);
             System.out.print("Enter the quantity you want to remove: ");
             int quantityRemoved = readInt(keyIn);
-            cart.removeCartList(removeNum, quantityRemoved);
+            cart.removeCartList(removeNum-1, quantityRemoved);
+            viewCart(keyIn, cart);
         } else if (itemNum == 0) {
             System.out.println("Thank you for using QuickBite.");
             System.exit(0);

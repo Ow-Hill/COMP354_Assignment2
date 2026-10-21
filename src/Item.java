@@ -47,8 +47,9 @@ public class Item{
         this.amount = amount;
     }
 
+    @Override 
     public String toString(){
-        String out = "" + this.itemName + " " + this.price + " " + this.restaurant + " " + this.amount + " ";
+        String out = this.amount + " x\t" + this.itemName + "\t$" + this.price + "\t" + this.restaurant;
         return out;
     }
 
