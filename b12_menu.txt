@@ -1,0 +1,8 @@
+item_id|restaurant_id|name|description|price_cad|available
+B01|R01|Classic Burger|Beef patty with lettuce tomato and house sauce|10.99|true
+B02|R01|Cheeseburger|Beef patty with cheddar cheese and house sauce|11.99|true
+B03|R01|Chicken Burger|Crispy chicken with lettuce and mayonnaise|11.49|true
+B04|R01|French Fries|Golden crispy fries|4.49|true
+B05|R01|Poutine|Fries with cheese curds and gravy|7.99|true
+B06|R01|Soft Drink|355 ml canned soft drink|2.49|true
+B07|R01|Chocolate Milkshake|Chocolate milkshake with whipped cream|5.99|false
