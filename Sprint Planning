@@ -1,0 +1,30 @@
+Sprint Planning 
+Step 1 – Sprint Goal
+	Allow customers to discover restaurants and manage their shopping cart.
+
+Step 2 – Relevant Product Backlog Items
+	PB-01	   Add Items to an Order 	
+	PB-03	   View Restaurant Menus
+	PB-04	   Browse Available Restaurants
+	PB-05	   Delete from cart
+
+Step 3 – Determine Team’s Available Capacity
+	Owen and Lily are working on design and implementation of a basic work structure. Julia and Zhaohao will start coding first to create the menus and basic layout of the system while Owen and Lily work on documentation and structure of the various components. Then we will redistribute the coding of the different features: add items, view restaurant menus, browse restaurants, and delete items from the cart. 
+
+Step 4 – Identify Engineering Tasks
+  Create class diagram 
+  Create navigation diagram
+  Define methods
+  Create text files to store the restaurants and the menus 
+  Test all the features of our sprint
+
+Step 5 – Sprint Backlog
+	PB-01	   Add Items to an Order 
+    Create cart object
+    Create item object
+	PB-03	   View Restaurant Menus
+    Txt file for each menu
+	PB-04	   Browse Available Restaurants
+    Txt file that lists all the restaurants
+	PB-05	   Delete from cart
+    Method inside the cart object that allows to change the quantity of a certain item in a cart
